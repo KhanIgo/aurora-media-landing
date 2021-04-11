@@ -10,10 +10,10 @@
         font-size: 1.2em;
         @include mask-icon('img/icon/icon-phone.svg');
     }
-    &_email{
-        font-size: 1.1em;
-        @include mask-icon('img/icon/icon-email.svg');
-    }
+    // &_email{
+    //     font-size: 1.1em;
+    //     @include mask-icon('img/icon/icon-email.svg');
+    // }
     &_ellipsis{
         // font-size: 1.1em;
         width: 2.5em;

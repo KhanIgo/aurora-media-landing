@@ -158,7 +158,7 @@ gulp.task('watchers', function (done) {
     
 gulp.task('serve', function(done) {
   connect.server({
-    port: 8002, //default
+    port: 8003, //default
     // hostname: '127.0.0.1' //default
     base: path.target,
     open: true   

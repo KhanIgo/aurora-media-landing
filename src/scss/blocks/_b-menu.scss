@@ -1,0 +1,39 @@
+.b-menu{
+    list-style: none;
+    display: flex;
+
+    &__item{
+        margin: 0 5px;
+        &.is-active{
+            color: var(--cRed);
+        }
+
+    }
+    
+    &__link{
+        text-decoration: none;
+        color: inherit;
+
+        
+    }
+
+    &_social{
+        align-items: center;
+        .b-menu__item{
+            margin: 0 1.1em;
+            &:first-child{ margin-left: 0; }
+            &:last-child{ margin-right: 0; }
+        }
+    }
+    
+    &_lang{
+        color: white;
+        font-size: 1.87em;
+
+        .b-menu__item{
+            margin: 0 0.8em;
+            &:first-child{ margin-left: 0; }
+            &:last-child{ margin-right: 0; }
+        }
+    }
+}

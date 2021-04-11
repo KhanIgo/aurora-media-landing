@@ -1,0 +1,15 @@
+
+  .b-card {
+      width: 45%;
+    &__teaser {
+      .b-card__img {
+      }
+      .b-card__btn.btn_red {
+        &:hover {}
+        &:active {}
+        &:focus {}
+      }
+    }
+    &__title {
+    }
+  }

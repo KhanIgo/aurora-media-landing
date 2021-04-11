@@ -4,7 +4,7 @@ p:empty{
 p{
     margin-bottom: 1em;
     line-height: 1.25em;
-    &:last-child{
+    &:last-child, &:last-of-type{
         margin-bottom: 0;
     }
 }
