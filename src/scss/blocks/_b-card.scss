@@ -1,15 +1,36 @@
 
   .b-card {
-      width: 45%;
+    //   width: 45%;
+
+
+
+
     &__teaser {
-      .b-card__img {
-      }
-      .b-card__btn.btn_red {
-        &:hover {}
-        &:active {}
-        &:focus {}
-      }
+        width: 28.12em;
+        height: 19.4em;
+        // max-width: 50%;
+        font-size: 10px;
+        position: relative;
+        z-index: 3;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;    
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__btn {
+      &:hover {}
+      &:active {}
+      &:focus {}
     }
     &__title {
+        width: 100%;
+        text-align: center;
+        font-size: 0.63em;
+        color: white;
     }
   }
