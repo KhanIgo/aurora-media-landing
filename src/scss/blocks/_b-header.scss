@@ -2,12 +2,46 @@
   .b-header {
     &__cnt {
         width: 100%;
+        max-width: 100%;
         justify-content: space-between;
+
+        @media (max-width: 1000px){
+          flex-direction: column;
+          align-items: center;
+        }
       
       .b-logo {}
       
-      &__social{}
+
+
       
-      &__lang {}
+    }
+
+    &__social, &__lang {
+      width: 400px;
+      display: flex;
+      align-items: flex-start;
+      align-self: flex-start;
+      margin-top: 7em;
+      @media (max-width: 1500px ){
+        width: 250px;
+      }
+
+    }
+    
+    
+    &__social{
+      @media (max-width: 1000px){
+        display: none;
+      }
+    }
+    
+    &__lang {
+      justify-content: flex-end;
+      @media (max-width: 1000px){
+        width: auto;
+        align-self: center;
+        margin-top: 2em;
+      }
     }
   }

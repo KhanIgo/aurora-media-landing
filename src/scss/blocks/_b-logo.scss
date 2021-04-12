@@ -5,10 +5,17 @@
     text-align: center;
     color: white;
     text-decoration: none;
+    
+    @media (max-width: 1500PX){
+        font-size: 0.85em;
+    }
 
 
-    &__img{}
+    &__img{
+        max-width: 14.1em;
+    }
     &__slogan{
-        margin-top: 1em;
+        margin-top: 1.4em;
+        font-size: 1.25em;
     }
 }

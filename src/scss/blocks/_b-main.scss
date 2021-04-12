@@ -8,15 +8,40 @@
         width: 50%;
         display: flex;
         flex-wrap: wrap;
+        
+        &_l{
+            padding-right: 1em;
+        }
+        
+        &_r{
+            padding-left: 1em;
+        }
     }
 
     &__col-title{
         width: 100%;
+        color: white;
+        font-size: 1.87em;
+
+        &_l{
+            text-align: right;
+        }
+        &_r{
+            text-align: left;
+        }
     }
 
     &__cards{
         width: 100%;
         display: flex;
+
+
+        &_l{
+            justify-content: flex-end;
+        }
+        &_r{
+            justify-content: flex-start;
+        }
     }
 
 }

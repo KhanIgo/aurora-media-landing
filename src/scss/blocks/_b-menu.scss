@@ -32,8 +32,22 @@
 
         .b-menu__item{
             margin: 0 0.8em;
+            
             &:first-child{ margin-left: 0; }
             &:last-child{ margin-right: 0; }
+        }
+    }
+
+    &_social, &_lang{
+        .b-menu__item{
+          
+            @media (max-width: 1500px ){
+                margin: 0 0.4em;
+                font-size: 0.8em;
+                IMG{
+                    max-width: 80%;
+                }
+            }
         }
     }
 }
