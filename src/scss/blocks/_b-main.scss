@@ -8,9 +8,20 @@
         width: 50%;
         display: flex;
         flex-wrap: wrap;
+        position: relative;
         
         &_l{
             padding-right: 1em;
+
+            &:after{
+                content: '';
+                position: absolute;
+                right: -1px;
+                top: 0;
+                width: 3px;
+                height: 33px;
+                background-color: var(--cRed);
+            }
         }
         
         &_r{

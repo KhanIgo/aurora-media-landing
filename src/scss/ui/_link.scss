@@ -1,15 +1,41 @@
 .link-phone{
     text-decoration: none;
+    transition: 350ms ease-in-out;
+    
+    &:hover{
+        color: var(--cRed);
+    }
 
     &_1{
         font-size: 2.3em;
     }
     &_2{
         font-size: 1.5em;
+        margin-left: 0.5EM;
     }
 }
 
+.link_email{
+    transition: 350ms ease-in-out;
+    i{
+        transition: 350ms ease-in-out;
+
+    }
+    &:hover{
+        color: var(--cRed);
+        i{
+            // filter: grayscale(4) brightness(5)
+        }
+    }
+}
 
 .link-soc{
     margin: 0 0.3em;
+    transition: 350ms ease-in-out;
+
+
+    &:hover{
+        filter: grayscale(4) brightness(5)
+
+    }
 }

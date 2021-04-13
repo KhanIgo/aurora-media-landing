@@ -8,12 +8,13 @@
             color: var(--cRed);
         }
 
-    }
     
+    }
+
+
     &__link{
         text-decoration: none;
-        color: inherit;
-
+        transition: 350ms ease-in-out;
         
     }
 
@@ -21,8 +22,14 @@
         align-items: center;
         .b-menu__item{
             margin: 0 1.1em;
+            transition: filter 350ms ease-in-out;
             &:first-child{ margin-left: 0; }
             &:last-child{ margin-right: 0; }
+
+            &:hover{
+                transform: scale(1.1);
+                filter: grayscale(1) brightness(5);
+            }
         }
     }
     
@@ -33,6 +40,11 @@
         .b-menu__item{
             margin: 0 0.8em;
             
+            &:hover{
+                color: var(--cRed);
+                transform: scale(1.1);
+            }
+
             &:first-child{ margin-left: 0; }
             &:last-child{ margin-right: 0; }
         }
