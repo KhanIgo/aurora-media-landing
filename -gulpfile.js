@@ -32,15 +32,16 @@ var
     const path = {
         src: './src',
         // target: './dist',
-        target: './../../sites/aurora.lc/wp-content/themes/zest-web/assets',
-                // target: './html',
+        target: './../site/public_html/wp-content/themes/zest-web/assets',
+        targetRoot: './../site/public_html/',
+        // target: './html',
     };
     path.srcJs = path.src+'/js';
     path.srcCss = path.src+'/scss';
     path.srcImg = path.src+'/images';
     path.targetJs = path.target+'/js';
     path.targetCss = path.target+'/css';
-    path.targetImg = path.target+'/images';
+    path.targetImg = path.targetRoot+'/images';
     path.srcFonts = path.src +'/fonts';
     path.targetFonts = path.target +'/fonts';
 
