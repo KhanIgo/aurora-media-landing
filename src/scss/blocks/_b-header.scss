@@ -25,6 +25,12 @@
       @media (max-width: 1500px ){
         width: 250px;
       }
+      @media (max-width: $tabWidth){
+        padding-bottom: 1.5em;
+        border-bottom: solid 1px var(--cRed);
+        margin-top: 1em;
+        margin-bottom: 2em;
+      }
 
     }
     

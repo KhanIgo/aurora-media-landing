@@ -1,14 +1,26 @@
 .b-main{
 
-
+    padding-top: 20px;
+    
     &__cnt{
         width: 100%;
+
+        @media (max-width: $mobWidth){
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
     &__col{
         width: 50%;
         display: flex;
         flex-wrap: wrap;
-        position: relative;
+        position: relative; 
+        @media (max-width: $tabSmlWidth){
+            width: 100%;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            align-items: center;
+        }
         
         &_l{
             padding-right: 1em;
@@ -19,8 +31,12 @@
                 right: -1px;
                 top: 0;
                 width: 3px;
-                height: 33px;
+                height: 2em;
                 background-color: var(--cRed);
+
+                @media (max-width: $xlWidth){
+                    height: 1.3em;
+                }
             }
         }
         
@@ -33,7 +49,42 @@
         width: 100%;
         color: white;
         font-size: 1.87em;
+        padding: 0 1em;
+        
+        @media (max-width: $xlWidth){
+            font-size: 1.4em;
+        }
+        
+        @media (max-width: $tabSmlWidth){
+            display: none;
+        }
 
+        &_l{
+            text-align: right;
+        }
+        &_r{
+            text-align: left;
+        }
+    }
+    &__mob-titles{
+        display: none;  
+        width: 100%;
+        margin-bottom: 20px;
+        @media (max-width: $tabSmlWidth){
+            display: flex;
+        }
+
+        hr{
+            height: 0.7em;
+            width: 1px;
+            background-color: white;
+        }
+    }
+    &__mob-title{
+        width: 50%;
+        font-size: 0.75em;
+        color: white;
+        padding: 0 0.5em;
         &_l{
             text-align: right;
         }
@@ -45,13 +96,25 @@
     &__cards{
         width: 100%;
         display: flex;
-
+        margin-top: 20px;
+        @media (max-width:1190px){
+            flex-direction: column;
+        }   
+        @media (max-width: $tabSmlWidth){
+            align-items: center !important;
+        }
 
         &_l{
             justify-content: flex-end;
+            @media (max-width:1190px){
+                align-items: flex-end;
+            }
         }
         &_r{
             justify-content: flex-start;
+            @media (max-width:1190px){
+                align-items: flex-start;
+            }
         }
     }
 

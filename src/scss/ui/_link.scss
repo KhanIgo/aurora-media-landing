@@ -8,10 +8,16 @@
 
     &_1{
         font-size: 2.3em;
+        @media (max-width: $tabWidth){
+            font-size: 1.25em;
+        }
     }
     &_2{
         font-size: 1.5em;
         margin-left: 0.5EM;
+        @media (max-width: $tabWidth){
+            font-size: 1.12em;
+        }
     }
 }
 

@@ -32,7 +32,7 @@ var
     const path = {
         src: './src',
         // target: './dist',
-        target: './../public_html/wp-content/themes/infographer/_zest/assets',
+        target: './../site/public_html/wp-content/themes/zest-web/_zest/assets',
         // target: './../Crazy-studio/iComplect/public_html/wp-content/themes/i-comp/assets/',
         // target: './html',
     };

@@ -1,5 +1,8 @@
 .b-footer{
-
+    padding: 20px 0 15px;
+    @media (max-width: $tabWidth){
+        margin-top: 55px;
+    }
     &__cnt{
         width: 100%;
         justify-content: center;
@@ -7,12 +10,25 @@
         &_1{
             color: white;
             align-items: center;
+            
+            @media (max-width: $xlWidth){
+                font-size: 0.75em;
+            }
+            
+            @media (max-width: $tabWidth ){
+                flex-direction: column;
+            }
         }
         &_2{
             font-size: 0.83em;
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.5);
             padding-top: 1.5em;
+            text-align: center;
+            @media (max-width: $mobWidth){
+                font-size: 0.5em;
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -20,8 +36,21 @@
         text-align: right;
         text-transform: uppercase;
         font-size: 1.2em;
+
         i{
             margin-left: 1em;
+            @media (max-width: $tabWidth ){
+                margin-left: 0;
+                margin-bottom: 8px;
+            }
+        }
+
+        @media (max-width: $tabWidth ){
+            order: 2;
+            flex-direction: column-reverse;
+            text-align: center;
+            font-size: 0.81em;
+            margin: 20px 0;
         }
     }
     &__phones{
@@ -40,11 +69,18 @@
             top: 14%;
             background-color: var(--cRed);
             // top: 0;
+            @media (max-width: $tabWidth ){
+                display: none;
+            }
         }
         &::before{ left: 0; }
         &::after{ right: 0; }
 
-
+        @media (max-width: $tabWidth){
+            margin: 0;
+            padding: 0;
+            order: 1;
+        }
 
         
     }
@@ -61,8 +97,26 @@
             text-decoration: none;
             display: flex;
             align-items: center;
+
+            @media (max-width: $tabWidth ){
+    
+                flex-direction: column;
+                text-align: center;
+                i{
+                    margin-right: 0 !important;
+                }
+            }
         }
         text-transform: uppercase;
         font-size: 1.13em;
+
+        @media (max-width: $tabWidth ){
+            order: 3;
+            margin-top: 15px;
+            font-size: 0.81em;
+            i{
+                margin-bottom: 7px;
+            }
+        }
     }
 }

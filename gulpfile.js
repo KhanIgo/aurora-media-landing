@@ -31,9 +31,9 @@ var
 
     const path = {
         src: './src',
-        target: './dist',
-        // target: './../public_html/wp-content/themes/infographer/_zest/assets',
-        // target: './../Crazy-studio/iComplect/public_html/wp-content/themes/i-comp/assets/',
+        // target: './dist',
+        target: './../site/public_html/wp-content/themes/zest-web/assets',
+        targetRoot: './../site/public_html/',
         // target: './html',
     };
     path.srcJs = path.src+'/js';
@@ -41,7 +41,7 @@ var
     path.srcImg = path.src+'/images';
     path.targetJs = path.target+'/js';
     path.targetCss = path.target+'/css';
-    path.targetImg = path.target+'/images';
+    path.targetImg = path.targetRoot+'/images';
     path.srcFonts = path.src +'/fonts';
     path.targetFonts = path.target +'/fonts';
 
@@ -143,11 +143,10 @@ gulp.task('copy', gulp.parallel('copy:img', 'copy:font'));
 
 
 gulp.task('watchers', function (done) {
-    gulp.watch( path.src + '/**/*.html', gulp.series('html') );
+    // gulp.watch( path.src + '/**/*.html', gulp.series('html') );
     gulp.watch( path.srcCss + '/**/*.scss', gulp.series('scss') );
     gulp.watch( path.srcJs + '/**/*.js', gulp.series('js') );
     gulp.watch( path.srcImg + '/**/*.*', gulp.series('copy:img') );
-    gulp.watch( path.srcCss +'/img/**/*.*', gulp.series('copy:img') );
     gulp.watch( path.srcFonts + '/**/*.*', gulp.series('copy:font') );
     
     // gulp.watch( path.src +'/images/**/*.*', gulp.series('copy:img') );
@@ -158,7 +157,7 @@ gulp.task('watchers', function (done) {
     
 gulp.task('serve', function(done) {
   connect.server({
-    port: 8003, //default
+    port: 8008, //default
     // hostname: '127.0.0.1' //default
     base: path.target,
     open: true   
@@ -177,7 +176,7 @@ gulp.task(
         // gulp.parallel('html', 'scss', 'js', 'copy'),
         // gulp.parallel('scss', 'js', 'copy'),
         'watchers',
-        'serve'
+        // 'serve'
     )
 );
   

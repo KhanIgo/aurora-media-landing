@@ -5,10 +5,21 @@
     text-align: center;
     color: white;
     text-decoration: none;
+    font-size: 0.9em;
     
     @media (max-width: 1500PX){
         font-size: 0.85em;
     }
+
+    // @media (max-width: 1300px){
+    @media (max-width: $xlWidth){
+        font-size: 0.7em;
+    }
+
+    @media (max-width: $mobWidth){
+        font-size: 0.55em;
+    }
+    
 
 
     &__img{
@@ -17,5 +28,9 @@
     &__slogan{
         margin-top: 1.4em;
         font-size: 1.25em;
+        @media (max-width: $mobWidth){
+            font-size: 1em;
+            margin-top: 2.5em;
+        }
     }
 }
